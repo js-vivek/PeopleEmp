@@ -1,0 +1,8 @@
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\bin\Debug\PeopleEmpBusinessLayer.dll.config
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\bin\Debug\PeopleEmpBusinessLayer.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\bin\Debug\PeopleEmpBusinessLayer.pdb
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\obj\Debug\PeopleEmpBusinessLayer.csprojResolveAssemblyReference.cache
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\obj\Debug\PeopleEmpBusinessLayer.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\obj\Debug\PeopleEmpBusinessLayer.pdb
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\bin\Debug\EntityClasses.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpBusinessLayer\bin\Debug\EntityClasses.pdb

@@ -1,0 +1,140 @@
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\csc.exe
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\System.Collections.Immutable.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\vbc.exe
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\VBCSCompiler.exe
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\VBCSCompiler.exe.config
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\PeopleEmpowermentFrontEndSite.dll.config
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\PeopleEmpowermentFrontEndSite.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\PeopleEmpowermentFrontEndSite.pdb
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Antlr3.Runtime.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.SqlServer.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Google.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Web.Infrastructure.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Newtonsoft.Json.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Owin.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Helpers.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Mvc.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Optimization.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Razor.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Deployment.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Razor.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\WebGrease.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Helpers.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Mvc.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Optimization.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Razor.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Deployment.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Razor.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Antlr3.Runtime.pdb
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Newtonsoft.Json.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.SqlServer.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Google.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\obj\Debug\PeopleEmpowermentFrontEndSite.csprojResolveAssemblyReference.cache
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\obj\Debug\PeopleEmpowermentFrontEndSite.dll
+D:\Paliganj times\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\obj\Debug\PeopleEmpowermentFrontEndSite.pdb
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\csc.exe
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\System.Collections.Immutable.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\vbc.exe
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\VBCSCompiler.exe
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\roslyn\VBCSCompiler.exe.config
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\PeopleEmpowermentFrontEndSite.dll.config
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\PeopleEmpowermentFrontEndSite.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\PeopleEmpowermentFrontEndSite.pdb
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Antlr3.Runtime.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.SqlServer.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Core.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Cookies.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Facebook.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Google.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.OAuth.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Twitter.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Web.Infrastructure.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Newtonsoft.Json.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Owin.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Helpers.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Mvc.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Optimization.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Razor.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Deployment.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Razor.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\WebGrease.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Helpers.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Mvc.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Optimization.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.Razor.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Deployment.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\System.Web.WebPages.Razor.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Antlr3.Runtime.pdb
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Newtonsoft.Json.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityFramework.SqlServer.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Core.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Facebook.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Cookies.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.OAuth.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Google.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.Twitter.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\obj\Debug\PeopleEmpowermentFrontEndSite.csprojResolveAssemblyReference.cache
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\obj\Debug\PeopleEmpowermentFrontEndSite.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\obj\Debug\PeopleEmpowermentFrontEndSite.pdb
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityClasses.dll
+D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpowermentFrontEndSite\bin\EntityClasses.pdb
