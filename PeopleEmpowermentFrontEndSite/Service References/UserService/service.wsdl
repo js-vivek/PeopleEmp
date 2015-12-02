@@ -4,8 +4,10 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import namespace="http://tempuri.org/" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" />
       <xsd:import namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User" />
       <xsd:import namespace="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IUserService_TestService_InputMessage">
@@ -14,20 +16,318 @@
   <wsdl:message name="IUserService_TestService_OutputMessage">
     <wsdl:part name="parameters" element="tns:TestServiceResponse" />
   </wsdl:message>
-  <wsdl:message name="IUserService_AddUser_InputMessage">
-    <wsdl:part name="parameters" element="tns:AddUser" />
+  <wsdl:message name="IUserService_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
   </wsdl:message>
-  <wsdl:message name="IUserService_AddUser_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  <wsdl:message name="IUserService_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_RegisterUser_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q1:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAddress" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddAddress_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q2:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddComplaintComments_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddComplaintComments" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddComplaintComments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddComplaintCommentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddComplaintComments_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q3:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreateComplaint_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateComplaint" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreateComplaint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateComplaintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreateComplaint_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q4:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_Login_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q5:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_ConfigureWallet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfigureWallet" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_ConfigureWallet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfigureWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_ConfigureWallet_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q6:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreditWallet_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreditWallet" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreditWallet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreditWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_CreditWallet_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q7:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DebitFromWallet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DebitFromWallet" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DebitFromWallet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DebitFromWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DebitFromWallet_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q8:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_ViewRequestHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRequestHistory" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_ViewRequestHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRequestHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_ViewRequestHistory_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q9:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_MakeServicePayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:MakeServicePayment" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_MakeServicePayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MakeServicePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_MakeServicePayment_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q10:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_RaiseServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:RaiseServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_RaiseServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RaiseServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_RaiseServiceRequest_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q11:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateServiceRequest_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q12:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteServiceRequest_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q13:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AcceptServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AcceptServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AcceptServiceRequest_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q14:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddUserRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserRole" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddUserRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddUserRole_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q15:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteUserRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserRole" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteUserRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DeleteUserRole_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q16:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateUserRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserRole" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateUserRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_UpdateUserRole_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q17:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AvailForService_InputMessage">
+    <wsdl:part name="parameters" element="tns:AvailForService" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AvailForService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AvailForServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AvailForService_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q18:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DenyFromService_InputMessage">
+    <wsdl:part name="parameters" element="tns:DenyFromService" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DenyFromService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DenyFromServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_DenyFromService_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q19:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetRequestHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestHistory" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetRequestHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetRequestHistory_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q20:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetServiceRequestInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceRequestInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetServiceRequestInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceRequestInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_GetServiceRequestInfo_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q21:PeopleEmpException" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_RejectServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:RejectServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_RejectServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RejectServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_RejectServiceRequest_PeopleEmpExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException" name="detail" element="q22:PeopleEmpException" />
   </wsdl:message>
   <wsdl:portType name="IUserService">
     <wsdl:operation name="TestService">
       <wsdl:input wsaw:Action="http://tempuri.org/IUserService/TestService" message="tns:IUserService_TestService_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IUserService/TestServiceResponse" message="tns:IUserService_TestService_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="AddUser">
-      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AddUser" message="tns:IUserService_AddUser_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AddUserResponse" message="tns:IUserService_AddUser_OutputMessage" />
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/RegisterUser" message="tns:IUserService_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/RegisterUserResponse" message="tns:IUserService_RegisterUser_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/RegisterUserPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_RegisterUser_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AddAddress" message="tns:IUserService_AddAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AddAddressResponse" message="tns:IUserService_AddAddress_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/AddAddressPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_AddAddress_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddComplaintComments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AddComplaintComments" message="tns:IUserService_AddComplaintComments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AddComplaintCommentsResponse" message="tns:IUserService_AddComplaintComments_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/AddComplaintCommentsPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_AddComplaintComments_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateComplaint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CreateComplaint" message="tns:IUserService_CreateComplaint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CreateComplaintResponse" message="tns:IUserService_CreateComplaint_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/CreateComplaintPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_CreateComplaint_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/Login" message="tns:IUserService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/LoginResponse" message="tns:IUserService_Login_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/LoginPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_Login_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfigureWallet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/ConfigureWallet" message="tns:IUserService_ConfigureWallet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/ConfigureWalletResponse" message="tns:IUserService_ConfigureWallet_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/ConfigureWalletPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_ConfigureWallet_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreditWallet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/CreditWallet" message="tns:IUserService_CreditWallet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/CreditWalletResponse" message="tns:IUserService_CreditWallet_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/CreditWalletPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_CreditWallet_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DebitFromWallet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/DebitFromWallet" message="tns:IUserService_DebitFromWallet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/DebitFromWalletResponse" message="tns:IUserService_DebitFromWallet_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/DebitFromWalletPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_DebitFromWallet_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewRequestHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/ViewRequestHistory" message="tns:IUserService_ViewRequestHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/ViewRequestHistoryResponse" message="tns:IUserService_ViewRequestHistory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/ViewRequestHistoryPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_ViewRequestHistory_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MakeServicePayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/MakeServicePayment" message="tns:IUserService_MakeServicePayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/MakeServicePaymentResponse" message="tns:IUserService_MakeServicePayment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/MakeServicePaymentPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_MakeServicePayment_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RaiseServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/RaiseServiceRequest" message="tns:IUserService_RaiseServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/RaiseServiceRequestResponse" message="tns:IUserService_RaiseServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/RaiseServiceRequestPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_RaiseServiceRequest_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/UpdateServiceRequest" message="tns:IUserService_UpdateServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/UpdateServiceRequestResponse" message="tns:IUserService_UpdateServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/UpdateServiceRequestPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_UpdateServiceRequest_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/DeleteServiceRequest" message="tns:IUserService_DeleteServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/DeleteServiceRequestResponse" message="tns:IUserService_DeleteServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/DeleteServiceRequestPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_DeleteServiceRequest_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AcceptServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AcceptServiceRequest" message="tns:IUserService_AcceptServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AcceptServiceRequestResponse" message="tns:IUserService_AcceptServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/AcceptServiceRequestPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_AcceptServiceRequest_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AddUserRole" message="tns:IUserService_AddUserRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AddUserRoleResponse" message="tns:IUserService_AddUserRole_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/AddUserRolePeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_AddUserRole_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/DeleteUserRole" message="tns:IUserService_DeleteUserRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/DeleteUserRoleResponse" message="tns:IUserService_DeleteUserRole_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/DeleteUserRolePeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_DeleteUserRole_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/UpdateUserRole" message="tns:IUserService_UpdateUserRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/UpdateUserRoleResponse" message="tns:IUserService_UpdateUserRole_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/UpdateUserRolePeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_UpdateUserRole_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AvailForService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AvailForService" message="tns:IUserService_AvailForService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AvailForServiceResponse" message="tns:IUserService_AvailForService_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/AvailForServicePeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_AvailForService_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DenyFromService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/DenyFromService" message="tns:IUserService_DenyFromService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/DenyFromServiceResponse" message="tns:IUserService_DenyFromService_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/DenyFromServicePeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_DenyFromService_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetRequestHistory" message="tns:IUserService_GetRequestHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetRequestHistoryResponse" message="tns:IUserService_GetRequestHistory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/GetRequestHistoryPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_GetRequestHistory_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceRequestInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/GetServiceRequestInfo" message="tns:IUserService_GetServiceRequestInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/GetServiceRequestInfoResponse" message="tns:IUserService_GetServiceRequestInfo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/GetServiceRequestInfoPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_GetServiceRequestInfo_PeopleEmpExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RejectServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/RejectServiceRequest" message="tns:IUserService_RejectServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/RejectServiceRequestResponse" message="tns:IUserService_RejectServiceRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserService/RejectServiceRequestPeopleEmpExceptionFault" name="PeopleEmpExceptionFault" message="tns:IUserService_RejectServiceRequest_PeopleEmpExceptionFault_FaultMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IUserService" type="tns:IUserService">
@@ -41,14 +341,269 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="AddUser">
-      <soap:operation soapAction="http://tempuri.org/IUserService/AddUser" style="document" />
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="http://tempuri.org/IUserService/RegisterUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddAddress">
+      <soap:operation soapAction="http://tempuri.org/IUserService/AddAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddComplaintComments">
+      <soap:operation soapAction="http://tempuri.org/IUserService/AddComplaintComments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateComplaint">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CreateComplaint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IUserService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ConfigureWallet">
+      <soap:operation soapAction="http://tempuri.org/IUserService/ConfigureWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreditWallet">
+      <soap:operation soapAction="http://tempuri.org/IUserService/CreditWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DebitFromWallet">
+      <soap:operation soapAction="http://tempuri.org/IUserService/DebitFromWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ViewRequestHistory">
+      <soap:operation soapAction="http://tempuri.org/IUserService/ViewRequestHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="MakeServicePayment">
+      <soap:operation soapAction="http://tempuri.org/IUserService/MakeServicePayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RaiseServiceRequest">
+      <soap:operation soapAction="http://tempuri.org/IUserService/RaiseServiceRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceRequest">
+      <soap:operation soapAction="http://tempuri.org/IUserService/UpdateServiceRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteServiceRequest">
+      <soap:operation soapAction="http://tempuri.org/IUserService/DeleteServiceRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptServiceRequest">
+      <soap:operation soapAction="http://tempuri.org/IUserService/AcceptServiceRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserRole">
+      <soap:operation soapAction="http://tempuri.org/IUserService/AddUserRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRole">
+      <soap:operation soapAction="http://tempuri.org/IUserService/DeleteUserRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserRole">
+      <soap:operation soapAction="http://tempuri.org/IUserService/UpdateUserRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AvailForService">
+      <soap:operation soapAction="http://tempuri.org/IUserService/AvailForService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DenyFromService">
+      <soap:operation soapAction="http://tempuri.org/IUserService/DenyFromService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestHistory">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetRequestHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceRequestInfo">
+      <soap:operation soapAction="http://tempuri.org/IUserService/GetServiceRequestInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RejectServiceRequest">
+      <soap:operation soapAction="http://tempuri.org/IUserService/RejectServiceRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PeopleEmpExceptionFault">
+        <soap:fault use="literal" name="PeopleEmpExceptionFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="UserService">

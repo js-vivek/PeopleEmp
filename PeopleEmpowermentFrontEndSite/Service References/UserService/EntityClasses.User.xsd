@@ -5,10 +5,131 @@
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q1:Base">
         <xs:sequence>
+          <xs:element minOccurs="0" name="AddressId" type="xs:int" />
+          <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SecurityAns" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SecurityQn" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserType" type="tns:UserTypeEnum" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="UserDetail" nillable="true" type="tns:UserDetail" />
+  <xs:complexType name="ServicePayment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q2:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CardType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsPaidByHardCash" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaidByCard" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServicePaymentId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceRequestId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServicePayment" nillable="true" type="tns:ServicePayment" />
+  <xs:complexType name="ServiceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q3:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AmountToBePaid" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AssignTO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpectedDeadline" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceRequestId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceRequest" nillable="true" type="tns:ServiceRequest" />
+  <xs:complexType name="ServiceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q4:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AmountToBePaid" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AssignTO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpectedDeadline" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceRequestId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResponse" nillable="true" type="tns:ServiceResponse" />
+  <xs:complexType name="UserRole">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q5:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DocumentPath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdExpiryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoleId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VerifiactionType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VerifiactionUserId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="lification" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserRole" nillable="true" type="tns:UserRole" />
+  <xs:complexType name="Wallet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q6:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Balance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CardType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LinkedMasterAccNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WalletHolderId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Wallet" nillable="true" type="tns:Wallet" />
+  <xs:complexType name="WalletTransaction">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q7:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CardType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DebitedFor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsCredit" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsCreditedByHard" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDebited" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WalletTransactionId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WalletTransaction" nillable="true" type="tns:WalletTransaction" />
+  <xs:simpleType name="UserTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GENERAL" />
+      <xs:enumeration value="ADMIN" />
+      <xs:enumeration value="SERVICE_Provider" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UserTypeEnum" nillable="true" type="tns:UserTypeEnum" />
+  <xs:complexType name="ArrayOfUserDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserDetail" nillable="true" type="tns:UserDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserDetail" nillable="true" type="tns:ArrayOfUserDetail" />
+  <xs:complexType name="ArrayOfServiceRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceRequest" nillable="true" type="tns:ServiceRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServiceRequest" nillable="true" type="tns:ArrayOfServiceRequest" />
 </xs:schema>

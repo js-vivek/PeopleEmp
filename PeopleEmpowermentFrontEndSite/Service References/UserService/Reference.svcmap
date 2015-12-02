@@ -27,6 +27,8 @@
     <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2fa62c56-ae5c-4c8d-bf9e-73c7bddddc18" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/PeopleEmpBusinessLayer/Services/UserService/UserService/mex" />
     <MetadataFile FileName="EntityClasses.User.xsd" MetadataType="Schema" ID="b73bdb09-0e5c-4468-940c-d188e7161c43" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/PeopleEmpBusinessLayer/Services/UserService/UserService/mex" />
     <MetadataFile FileName="EntityClasses.BaseTemplates.xsd" MetadataType="Schema" ID="4f40f315-e1a3-463d-8632-0114dcbe042e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/PeopleEmpBusinessLayer/Services/UserService/UserService/mex" />
+    <MetadataFile FileName="EntityClasses.Common.xsd" MetadataType="Schema" ID="d1ca2c0f-6467-4c7e-91c5-84edcae2cabb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/PeopleEmpBusinessLayer/Services/UserService/UserService/mex" />
+    <MetadataFile FileName="EntityClasses.CustomException.xsd" MetadataType="Schema" ID="5cfb3ffb-9f04-44fb-942c-d3de07b88e58" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/PeopleEmpBusinessLayer/Services/UserService/UserService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

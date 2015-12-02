@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityClasses.Common
 {
-    class UserComplaintDescription : Base
+    public class UserComplaintDescription : Base
     {
         private string _complaintDescription;
         private string _comlaintId;

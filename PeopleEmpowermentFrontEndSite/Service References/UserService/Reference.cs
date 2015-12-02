@@ -17,6 +17,19 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Base", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates")]
     [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.ServicePayment))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.ServiceResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.UserRole))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.Wallet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.WalletTransaction))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.Address))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.Complaint))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.ComplaintSevirity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.Role))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.Service))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.ServiceAvailability))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.UserComplaintDescription))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.UserDetail))]
     public partial class Base : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -24,10 +37,22 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateCreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateUpdatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool IsActiveField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool IsSuccessField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UpdatedByField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -36,6 +61,45 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedBy {
+            get {
+                return this.CreatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
+                    this.CreatedByField = value;
+                    this.RaisePropertyChanged("CreatedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime DateCreated {
+            get {
+                return this.DateCreatedField;
+            }
+            set {
+                if ((this.DateCreatedField.Equals(value) != true)) {
+                    this.DateCreatedField = value;
+                    this.RaisePropertyChanged("DateCreated");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime DateUpdated {
+            get {
+                return this.DateUpdatedField;
+            }
+            set {
+                if ((this.DateUpdatedField.Equals(value) != true)) {
+                    this.DateUpdatedField = value;
+                    this.RaisePropertyChanged("DateUpdated");
+                }
             }
         }
         
@@ -65,6 +129,19 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UpdatedBy {
+            get {
+                return this.UpdatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UpdatedByField, value) != true)) {
+                    this.UpdatedByField = value;
+                    this.RaisePropertyChanged("UpdatedBy");
+                }
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -77,12 +154,1354 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ServicePayment", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
+    [System.SerializableAttribute()]
+    public partial class ServicePayment : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AmountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CardTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IsPaidByHardCashField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PaidByCardField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServicePaymentIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceRequestIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AmountField, value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CardType {
+            get {
+                return this.CardTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CardTypeField, value) != true)) {
+                    this.CardTypeField = value;
+                    this.RaisePropertyChanged("CardType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IsPaidByHardCash {
+            get {
+                return this.IsPaidByHardCashField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IsPaidByHardCashField, value) != true)) {
+                    this.IsPaidByHardCashField = value;
+                    this.RaisePropertyChanged("IsPaidByHardCash");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PaidByCard {
+            get {
+                return this.PaidByCardField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PaidByCardField, value) != true)) {
+                    this.PaidByCardField = value;
+                    this.RaisePropertyChanged("PaidByCard");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServicePaymentId {
+            get {
+                return this.ServicePaymentIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServicePaymentIdField, value) != true)) {
+                    this.ServicePaymentIdField = value;
+                    this.RaisePropertyChanged("ServicePaymentId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceRequestId {
+            get {
+                return this.ServiceRequestIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceRequestIdField, value) != true)) {
+                    this.ServiceRequestIdField = value;
+                    this.RaisePropertyChanged("ServiceRequestId");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ServiceRequest", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
+    [System.SerializableAttribute()]
+    public partial class ServiceRequest : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AmountToBePaidField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AssignTOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CommentsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ExpectedDeadlineField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RequestStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RequestedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceRequestIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AmountToBePaid {
+            get {
+                return this.AmountToBePaidField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AmountToBePaidField, value) != true)) {
+                    this.AmountToBePaidField = value;
+                    this.RaisePropertyChanged("AmountToBePaid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AssignTO {
+            get {
+                return this.AssignTOField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AssignTOField, value) != true)) {
+                    this.AssignTOField = value;
+                    this.RaisePropertyChanged("AssignTO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comments {
+            get {
+                return this.CommentsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CommentsField, value) != true)) {
+                    this.CommentsField = value;
+                    this.RaisePropertyChanged("Comments");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ExpectedDeadline {
+            get {
+                return this.ExpectedDeadlineField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExpectedDeadlineField, value) != true)) {
+                    this.ExpectedDeadlineField = value;
+                    this.RaisePropertyChanged("ExpectedDeadline");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RequestStatus {
+            get {
+                return this.RequestStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RequestStatusField, value) != true)) {
+                    this.RequestStatusField = value;
+                    this.RaisePropertyChanged("RequestStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RequestedBy {
+            get {
+                return this.RequestedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RequestedByField, value) != true)) {
+                    this.RequestedByField = value;
+                    this.RaisePropertyChanged("RequestedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceId {
+            get {
+                return this.ServiceIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceIdField, value) != true)) {
+                    this.ServiceIdField = value;
+                    this.RaisePropertyChanged("ServiceId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceRequestId {
+            get {
+                return this.ServiceRequestIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceRequestIdField, value) != true)) {
+                    this.ServiceRequestIdField = value;
+                    this.RaisePropertyChanged("ServiceRequestId");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ServiceResponse", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
+    [System.SerializableAttribute()]
+    public partial class ServiceResponse : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AmountToBePaidField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AssignTOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CommentsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ExpectedDeadlineField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RequestStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RequestedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceRequestIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AmountToBePaid {
+            get {
+                return this.AmountToBePaidField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AmountToBePaidField, value) != true)) {
+                    this.AmountToBePaidField = value;
+                    this.RaisePropertyChanged("AmountToBePaid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AssignTO {
+            get {
+                return this.AssignTOField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AssignTOField, value) != true)) {
+                    this.AssignTOField = value;
+                    this.RaisePropertyChanged("AssignTO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comments {
+            get {
+                return this.CommentsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CommentsField, value) != true)) {
+                    this.CommentsField = value;
+                    this.RaisePropertyChanged("Comments");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ExpectedDeadline {
+            get {
+                return this.ExpectedDeadlineField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExpectedDeadlineField, value) != true)) {
+                    this.ExpectedDeadlineField = value;
+                    this.RaisePropertyChanged("ExpectedDeadline");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RequestStatus {
+            get {
+                return this.RequestStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RequestStatusField, value) != true)) {
+                    this.RequestStatusField = value;
+                    this.RaisePropertyChanged("RequestStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RequestedBy {
+            get {
+                return this.RequestedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RequestedByField, value) != true)) {
+                    this.RequestedByField = value;
+                    this.RaisePropertyChanged("RequestedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceId {
+            get {
+                return this.ServiceIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceIdField, value) != true)) {
+                    this.ServiceIdField = value;
+                    this.RaisePropertyChanged("ServiceId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceRequestId {
+            get {
+                return this.ServiceRequestIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceRequestIdField, value) != true)) {
+                    this.ServiceRequestIdField = value;
+                    this.RaisePropertyChanged("ServiceRequestId");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UserRole", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
+    [System.SerializableAttribute()]
+    public partial class UserRole : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DocumentPathField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdExpiryDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RoleIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UserIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VerifiactionTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VerifiactionUserIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string lificationField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DocumentPath {
+            get {
+                return this.DocumentPathField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DocumentPathField, value) != true)) {
+                    this.DocumentPathField = value;
+                    this.RaisePropertyChanged("DocumentPath");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IdExpiryDate {
+            get {
+                return this.IdExpiryDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdExpiryDateField, value) != true)) {
+                    this.IdExpiryDateField = value;
+                    this.RaisePropertyChanged("IdExpiryDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RoleId {
+            get {
+                return this.RoleIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RoleIdField, value) != true)) {
+                    this.RoleIdField = value;
+                    this.RaisePropertyChanged("RoleId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UserId {
+            get {
+                return this.UserIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserIdField, value) != true)) {
+                    this.UserIdField = value;
+                    this.RaisePropertyChanged("UserId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string VerifiactionType {
+            get {
+                return this.VerifiactionTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VerifiactionTypeField, value) != true)) {
+                    this.VerifiactionTypeField = value;
+                    this.RaisePropertyChanged("VerifiactionType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string VerifiactionUserId {
+            get {
+                return this.VerifiactionUserIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VerifiactionUserIdField, value) != true)) {
+                    this.VerifiactionUserIdField = value;
+                    this.RaisePropertyChanged("VerifiactionUserId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string lification {
+            get {
+                return this.lificationField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.lificationField, value) != true)) {
+                    this.lificationField = value;
+                    this.RaisePropertyChanged("lification");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Wallet", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
+    [System.SerializableAttribute()]
+    public partial class Wallet : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BalanceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CardTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LinkedMasterAccNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WalletHolderIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Balance {
+            get {
+                return this.BalanceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BalanceField, value) != true)) {
+                    this.BalanceField = value;
+                    this.RaisePropertyChanged("Balance");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CardType {
+            get {
+                return this.CardTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CardTypeField, value) != true)) {
+                    this.CardTypeField = value;
+                    this.RaisePropertyChanged("CardType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LinkedMasterAccNo {
+            get {
+                return this.LinkedMasterAccNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LinkedMasterAccNoField, value) != true)) {
+                    this.LinkedMasterAccNoField = value;
+                    this.RaisePropertyChanged("LinkedMasterAccNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string WalletHolderId {
+            get {
+                return this.WalletHolderIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WalletHolderIdField, value) != true)) {
+                    this.WalletHolderIdField = value;
+                    this.RaisePropertyChanged("WalletHolderId");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="WalletTransaction", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
+    [System.SerializableAttribute()]
+    public partial class WalletTransaction : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AmountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CardTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DebitedForField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IsCreditField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IsCreditedByHardField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IsDebitedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WalletTransactionIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AmountField, value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CardType {
+            get {
+                return this.CardTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CardTypeField, value) != true)) {
+                    this.CardTypeField = value;
+                    this.RaisePropertyChanged("CardType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DebitedFor {
+            get {
+                return this.DebitedForField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DebitedForField, value) != true)) {
+                    this.DebitedForField = value;
+                    this.RaisePropertyChanged("DebitedFor");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IsCredit {
+            get {
+                return this.IsCreditField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IsCreditField, value) != true)) {
+                    this.IsCreditField = value;
+                    this.RaisePropertyChanged("IsCredit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IsCreditedByHard {
+            get {
+                return this.IsCreditedByHardField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IsCreditedByHardField, value) != true)) {
+                    this.IsCreditedByHardField = value;
+                    this.RaisePropertyChanged("IsCreditedByHard");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IsDebited {
+            get {
+                return this.IsDebitedField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IsDebitedField, value) != true)) {
+                    this.IsDebitedField = value;
+                    this.RaisePropertyChanged("IsDebited");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string WalletTransactionId {
+            get {
+                return this.WalletTransactionIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WalletTransactionIdField, value) != true)) {
+                    this.WalletTransactionIdField = value;
+                    this.RaisePropertyChanged("WalletTransactionId");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Address", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common")]
+    [System.SerializableAttribute()]
+    public partial class Address : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AddressLine1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AddressLine2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PinCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StateOrRegionField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AddressLine1 {
+            get {
+                return this.AddressLine1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AddressLine1Field, value) != true)) {
+                    this.AddressLine1Field = value;
+                    this.RaisePropertyChanged("AddressLine1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AddressLine2 {
+            get {
+                return this.AddressLine2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AddressLine2Field, value) != true)) {
+                    this.AddressLine2Field = value;
+                    this.RaisePropertyChanged("AddressLine2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaCode {
+            get {
+                return this.AreaCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaCodeField, value) != true)) {
+                    this.AreaCodeField = value;
+                    this.RaisePropertyChanged("AreaCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PinCode {
+            get {
+                return this.PinCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PinCodeField, value) != true)) {
+                    this.PinCodeField = value;
+                    this.RaisePropertyChanged("PinCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string StateOrRegion {
+            get {
+                return this.StateOrRegionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StateOrRegionField, value) != true)) {
+                    this.StateOrRegionField = value;
+                    this.RaisePropertyChanged("StateOrRegion");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Complaint", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common")]
+    [System.SerializableAttribute()]
+    public partial class Complaint : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AssignedToField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ComlaintIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ComlaintServiceIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceServiceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StatusField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AssignedTo {
+            get {
+                return this.AssignedToField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AssignedToField, value) != true)) {
+                    this.AssignedToField = value;
+                    this.RaisePropertyChanged("AssignedTo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ComlaintId {
+            get {
+                return this.ComlaintIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ComlaintIdField, value) != true)) {
+                    this.ComlaintIdField = value;
+                    this.RaisePropertyChanged("ComlaintId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ComlaintServiceId {
+            get {
+                return this.ComlaintServiceIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ComlaintServiceIdField, value) != true)) {
+                    this.ComlaintServiceIdField = value;
+                    this.RaisePropertyChanged("ComlaintServiceId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceService {
+            get {
+                return this.ServiceServiceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceServiceField, value) != true)) {
+                    this.ServiceServiceField = value;
+                    this.RaisePropertyChanged("ServiceService");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ComplaintSevirity", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common")]
+    [System.SerializableAttribute()]
+    public partial class ComplaintSevirity : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompalinPriorityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompalinSevirityIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompalintSevirityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByNameField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompalinPriority {
+            get {
+                return this.CompalinPriorityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompalinPriorityField, value) != true)) {
+                    this.CompalinPriorityField = value;
+                    this.RaisePropertyChanged("CompalinPriority");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompalinSevirityId {
+            get {
+                return this.CompalinSevirityIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompalinSevirityIdField, value) != true)) {
+                    this.CompalinSevirityIdField = value;
+                    this.RaisePropertyChanged("CompalinSevirityId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompalintSevirity {
+            get {
+                return this.CompalintSevirityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompalintSevirityField, value) != true)) {
+                    this.CompalintSevirityField = value;
+                    this.RaisePropertyChanged("CompalintSevirity");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedByName {
+            get {
+                return this.CreatedByNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByNameField, value) != true)) {
+                    this.CreatedByNameField = value;
+                    this.RaisePropertyChanged("CreatedByName");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Role", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common")]
+    [System.SerializableAttribute()]
+    public partial class Role : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RoleIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RoleNameField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RoleId {
+            get {
+                return this.RoleIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RoleIdField, value) != true)) {
+                    this.RoleIdField = value;
+                    this.RaisePropertyChanged("RoleId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RoleName {
+            get {
+                return this.RoleNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RoleNameField, value) != true)) {
+                    this.RoleNameField = value;
+                    this.RaisePropertyChanged("RoleName");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Service", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common")]
+    [System.SerializableAttribute()]
+    public partial class Service : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AbsoluteServiceChargeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceCategoryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceDescriptionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ValidFromField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ValidToField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AbsoluteServiceCharge {
+            get {
+                return this.AbsoluteServiceChargeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AbsoluteServiceChargeField, value) != true)) {
+                    this.AbsoluteServiceChargeField = value;
+                    this.RaisePropertyChanged("AbsoluteServiceCharge");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceCategory {
+            get {
+                return this.ServiceCategoryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceCategoryField, value) != true)) {
+                    this.ServiceCategoryField = value;
+                    this.RaisePropertyChanged("ServiceCategory");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceDescription {
+            get {
+                return this.ServiceDescriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceDescriptionField, value) != true)) {
+                    this.ServiceDescriptionField = value;
+                    this.RaisePropertyChanged("ServiceDescription");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceId {
+            get {
+                return this.ServiceIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceIdField, value) != true)) {
+                    this.ServiceIdField = value;
+                    this.RaisePropertyChanged("ServiceId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceName {
+            get {
+                return this.ServiceNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceNameField, value) != true)) {
+                    this.ServiceNameField = value;
+                    this.RaisePropertyChanged("ServiceName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceType {
+            get {
+                return this.ServiceTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceTypeField, value) != true)) {
+                    this.ServiceTypeField = value;
+                    this.RaisePropertyChanged("ServiceType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ValidFrom {
+            get {
+                return this.ValidFromField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ValidFromField, value) != true)) {
+                    this.ValidFromField = value;
+                    this.RaisePropertyChanged("ValidFrom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ValidTo {
+            get {
+                return this.ValidToField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ValidToField, value) != true)) {
+                    this.ValidToField = value;
+                    this.RaisePropertyChanged("ValidTo");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ServiceAvailability", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common")]
+    [System.SerializableAttribute()]
+    public partial class ServiceAvailability : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DescriptionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceAvailIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ServiceIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AreaCode {
+            get {
+                return this.AreaCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaCodeField, value) != true)) {
+                    this.AreaCodeField = value;
+                    this.RaisePropertyChanged("AreaCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description {
+            get {
+                return this.DescriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
+                    this.DescriptionField = value;
+                    this.RaisePropertyChanged("Description");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceAvailId {
+            get {
+                return this.ServiceAvailIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceAvailIdField, value) != true)) {
+                    this.ServiceAvailIdField = value;
+                    this.RaisePropertyChanged("ServiceAvailId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ServiceId {
+            get {
+                return this.ServiceIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ServiceIdField, value) != true)) {
+                    this.ServiceIdField = value;
+                    this.RaisePropertyChanged("ServiceId");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UserComplaintDescription", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common")]
+    [System.SerializableAttribute()]
+    public partial class UserComplaintDescription : PeopleEmpowermentFrontEndSite.UserService.Base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ComlaintIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ComplaintDescriptionField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ComlaintId {
+            get {
+                return this.ComlaintIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ComlaintIdField, value) != true)) {
+                    this.ComlaintIdField = value;
+                    this.RaisePropertyChanged("ComlaintId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ComplaintDescription {
+            get {
+                return this.ComplaintDescriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ComplaintDescriptionField, value) != true)) {
+                    this.ComplaintDescriptionField = value;
+                    this.RaisePropertyChanged("ComplaintDescription");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UserDetail", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
     [System.SerializableAttribute()]
     public partial class UserDetail : PeopleEmpowermentFrontEndSite.UserService.Base {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AddressIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SecurityAnsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SecurityQnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UserIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private PeopleEmpowermentFrontEndSite.UserService.UserTypeEnum UserTypeField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AddressId {
+            get {
+                return this.AddressIdField;
+            }
+            set {
+                if ((this.AddressIdField.Equals(value) != true)) {
+                    this.AddressIdField = value;
+                    this.RaisePropertyChanged("AddressId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EmailId {
+            get {
+                return this.EmailIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailIdField, value) != true)) {
+                    this.EmailIdField = value;
+                    this.RaisePropertyChanged("EmailId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SecurityAns {
+            get {
+                return this.SecurityAnsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SecurityAnsField, value) != true)) {
+                    this.SecurityAnsField = value;
+                    this.RaisePropertyChanged("SecurityAns");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SecurityQn {
+            get {
+                return this.SecurityQnField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SecurityQnField, value) != true)) {
+                    this.SecurityQnField = value;
+                    this.RaisePropertyChanged("SecurityQn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UserId {
+            get {
+                return this.UserIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserIdField, value) != true)) {
+                    this.UserIdField = value;
+                    this.RaisePropertyChanged("UserId");
+                }
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string UserName {
@@ -94,6 +1513,126 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
                     this.UserNameField = value;
                     this.RaisePropertyChanged("UserName");
                 }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public PeopleEmpowermentFrontEndSite.UserService.UserTypeEnum UserType {
+            get {
+                return this.UserTypeField;
+            }
+            set {
+                if ((this.UserTypeField.Equals(value) != true)) {
+                    this.UserTypeField = value;
+                    this.RaisePropertyChanged("UserType");
+                }
+            }
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UserTypeEnum", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User")]
+    public enum UserTypeEnum : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        GENERAL = 0,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        ADMIN = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        SERVICE_Provider = 2,
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+    [System.SerializableAttribute()]
+    public partial class PeopleEmpException : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ErrorDetailsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ErrorMessageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool ResultField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StackTraceField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ErrorDetails {
+            get {
+                return this.ErrorDetailsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ErrorDetailsField, value) != true)) {
+                    this.ErrorDetailsField = value;
+                    this.RaisePropertyChanged("ErrorDetails");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ErrorMessage {
+            get {
+                return this.ErrorMessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ErrorMessageField, value) != true)) {
+                    this.ErrorMessageField = value;
+                    this.RaisePropertyChanged("ErrorMessage");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool Result {
+            get {
+                return this.ResultField;
+            }
+            set {
+                if ((this.ResultField.Equals(value) != true)) {
+                    this.ResultField = value;
+                    this.RaisePropertyChanged("Result");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string StackTrace {
+            get {
+                return this.StackTraceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StackTraceField, value) != true)) {
+                    this.StackTraceField = value;
+                    this.RaisePropertyChanged("StackTrace");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
     }
@@ -108,11 +1647,159 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/TestService", ReplyAction="http://tempuri.org/IUserService/TestServiceResponse")]
         System.Threading.Tasks.Task<string> TestServiceAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddUser", ReplyAction="http://tempuri.org/IUserService/AddUserResponse")]
-        PeopleEmpowermentFrontEndSite.UserService.UserDetail AddUser(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/RegisterUser", ReplyAction="http://tempuri.org/IUserService/RegisterUserResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/RegisterUserPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.UserDetail RegisterUser(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddUser", ReplyAction="http://tempuri.org/IUserService/AddUserResponse")]
-        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserDetail> AddUserAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/RegisterUser", ReplyAction="http://tempuri.org/IUserService/RegisterUserResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserDetail> RegisterUserAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddAddress", ReplyAction="http://tempuri.org/IUserService/AddAddressResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/AddAddressPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.Address AddAddress(PeopleEmpowermentFrontEndSite.UserService.Address address);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddAddress", ReplyAction="http://tempuri.org/IUserService/AddAddressResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Address> AddAddressAsync(PeopleEmpowermentFrontEndSite.UserService.Address address);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddComplaintComments", ReplyAction="http://tempuri.org/IUserService/AddComplaintCommentsResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/AddComplaintCommentsPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        bool AddComplaintComments(PeopleEmpowermentFrontEndSite.UserService.UserComplaintDescription complaintDescription);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddComplaintComments", ReplyAction="http://tempuri.org/IUserService/AddComplaintCommentsResponse")]
+        System.Threading.Tasks.Task<bool> AddComplaintCommentsAsync(PeopleEmpowermentFrontEndSite.UserService.UserComplaintDescription complaintDescription);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/CreateComplaint", ReplyAction="http://tempuri.org/IUserService/CreateComplaintResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/CreateComplaintPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.Complaint CreateComplaint(PeopleEmpowermentFrontEndSite.UserService.Complaint complaint);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/CreateComplaint", ReplyAction="http://tempuri.org/IUserService/CreateComplaintResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Complaint> CreateComplaintAsync(PeopleEmpowermentFrontEndSite.UserService.Complaint complaint);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/Login", ReplyAction="http://tempuri.org/IUserService/LoginResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/LoginPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        bool Login(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/Login", ReplyAction="http://tempuri.org/IUserService/LoginResponse")]
+        System.Threading.Tasks.Task<bool> LoginAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/ConfigureWallet", ReplyAction="http://tempuri.org/IUserService/ConfigureWalletResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/ConfigureWalletPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.Wallet ConfigureWallet(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/ConfigureWallet", ReplyAction="http://tempuri.org/IUserService/ConfigureWalletResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Wallet> ConfigureWalletAsync(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/CreditWallet", ReplyAction="http://tempuri.org/IUserService/CreditWalletResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/CreditWalletPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.Wallet CreditWallet(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/CreditWallet", ReplyAction="http://tempuri.org/IUserService/CreditWalletResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Wallet> CreditWalletAsync(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DebitFromWallet", ReplyAction="http://tempuri.org/IUserService/DebitFromWalletResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/DebitFromWalletPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.Wallet DebitFromWallet(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DebitFromWallet", ReplyAction="http://tempuri.org/IUserService/DebitFromWalletResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Wallet> DebitFromWalletAsync(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/ViewRequestHistory", ReplyAction="http://tempuri.org/IUserService/ViewRequestHistoryResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/ViewRequestHistoryPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.Service[] ViewRequestHistory(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/ViewRequestHistory", ReplyAction="http://tempuri.org/IUserService/ViewRequestHistoryResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Service[]> ViewRequestHistoryAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/MakeServicePayment", ReplyAction="http://tempuri.org/IUserService/MakeServicePaymentResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/MakeServicePaymentPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServicePayment MakeServicePayment(PeopleEmpowermentFrontEndSite.UserService.ServicePayment payment);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/MakeServicePayment", ReplyAction="http://tempuri.org/IUserService/MakeServicePaymentResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServicePayment> MakeServicePaymentAsync(PeopleEmpowermentFrontEndSite.UserService.ServicePayment payment);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/RaiseServiceRequest", ReplyAction="http://tempuri.org/IUserService/RaiseServiceRequestResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/RaiseServiceRequestPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServiceRequest RaiseServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/RaiseServiceRequest", ReplyAction="http://tempuri.org/IUserService/RaiseServiceRequestResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> RaiseServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/UpdateServiceRequest", ReplyAction="http://tempuri.org/IUserService/UpdateServiceRequestResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/UpdateServiceRequestPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServiceRequest UpdateServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/UpdateServiceRequest", ReplyAction="http://tempuri.org/IUserService/UpdateServiceRequestResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> UpdateServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DeleteServiceRequest", ReplyAction="http://tempuri.org/IUserService/DeleteServiceRequestResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/DeleteServiceRequestPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServiceRequest DeleteServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DeleteServiceRequest", ReplyAction="http://tempuri.org/IUserService/DeleteServiceRequestResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> DeleteServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AcceptServiceRequest", ReplyAction="http://tempuri.org/IUserService/AcceptServiceRequestResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/AcceptServiceRequestPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServiceResponse AcceptServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AcceptServiceRequest", ReplyAction="http://tempuri.org/IUserService/AcceptServiceRequestResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceResponse> AcceptServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddUserRole", ReplyAction="http://tempuri.org/IUserService/AddUserRoleResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/AddUserRolePeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.UserRole AddUserRole(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AddUserRole", ReplyAction="http://tempuri.org/IUserService/AddUserRoleResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserRole> AddUserRoleAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DeleteUserRole", ReplyAction="http://tempuri.org/IUserService/DeleteUserRoleResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/DeleteUserRolePeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.UserRole DeleteUserRole(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DeleteUserRole", ReplyAction="http://tempuri.org/IUserService/DeleteUserRoleResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserRole> DeleteUserRoleAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/UpdateUserRole", ReplyAction="http://tempuri.org/IUserService/UpdateUserRoleResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/UpdateUserRolePeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.UserRole UpdateUserRole(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/UpdateUserRole", ReplyAction="http://tempuri.org/IUserService/UpdateUserRoleResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserRole> UpdateUserRoleAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AvailForService", ReplyAction="http://tempuri.org/IUserService/AvailForServiceResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/AvailForServicePeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.UserDetail[] AvailForService(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/AvailForService", ReplyAction="http://tempuri.org/IUserService/AvailForServiceResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserDetail[]> AvailForServiceAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DenyFromService", ReplyAction="http://tempuri.org/IUserService/DenyFromServiceResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/DenyFromServicePeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.Service DenyFromService(PeopleEmpowermentFrontEndSite.UserService.Service Service);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/DenyFromService", ReplyAction="http://tempuri.org/IUserService/DenyFromServiceResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Service> DenyFromServiceAsync(PeopleEmpowermentFrontEndSite.UserService.Service Service);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/GetRequestHistory", ReplyAction="http://tempuri.org/IUserService/GetRequestHistoryResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/GetRequestHistoryPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServiceRequest[] GetRequestHistory(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/GetRequestHistory", ReplyAction="http://tempuri.org/IUserService/GetRequestHistoryResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest[]> GetRequestHistoryAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/GetServiceRequestInfo", ReplyAction="http://tempuri.org/IUserService/GetServiceRequestInfoResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/GetServiceRequestInfoPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServiceRequest GetServiceRequestInfo(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/GetServiceRequestInfo", ReplyAction="http://tempuri.org/IUserService/GetServiceRequestInfoResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> GetServiceRequestInfoAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/RejectServiceRequest", ReplyAction="http://tempuri.org/IUserService/RejectServiceRequestResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(PeopleEmpowermentFrontEndSite.UserService.PeopleEmpException), Action="http://tempuri.org/IUserService/RejectServiceRequestPeopleEmpExceptionFault", Name="PeopleEmpException", Namespace="http://schemas.datacontract.org/2004/07/EntityClasses.CustomException")]
+        PeopleEmpowermentFrontEndSite.UserService.ServiceRequest RejectServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserService/RejectServiceRequest", ReplyAction="http://tempuri.org/IUserService/RejectServiceRequestResponse")]
+        System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> RejectServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -150,12 +1837,180 @@ namespace PeopleEmpowermentFrontEndSite.UserService {
             return base.Channel.TestServiceAsync();
         }
         
-        public PeopleEmpowermentFrontEndSite.UserService.UserDetail AddUser(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
-            return base.Channel.AddUser(user);
+        public PeopleEmpowermentFrontEndSite.UserService.UserDetail RegisterUser(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
+            return base.Channel.RegisterUser(user);
         }
         
-        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserDetail> AddUserAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
-            return base.Channel.AddUserAsync(user);
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserDetail> RegisterUserAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
+            return base.Channel.RegisterUserAsync(user);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.Address AddAddress(PeopleEmpowermentFrontEndSite.UserService.Address address) {
+            return base.Channel.AddAddress(address);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Address> AddAddressAsync(PeopleEmpowermentFrontEndSite.UserService.Address address) {
+            return base.Channel.AddAddressAsync(address);
+        }
+        
+        public bool AddComplaintComments(PeopleEmpowermentFrontEndSite.UserService.UserComplaintDescription complaintDescription) {
+            return base.Channel.AddComplaintComments(complaintDescription);
+        }
+        
+        public System.Threading.Tasks.Task<bool> AddComplaintCommentsAsync(PeopleEmpowermentFrontEndSite.UserService.UserComplaintDescription complaintDescription) {
+            return base.Channel.AddComplaintCommentsAsync(complaintDescription);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.Complaint CreateComplaint(PeopleEmpowermentFrontEndSite.UserService.Complaint complaint) {
+            return base.Channel.CreateComplaint(complaint);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Complaint> CreateComplaintAsync(PeopleEmpowermentFrontEndSite.UserService.Complaint complaint) {
+            return base.Channel.CreateComplaintAsync(complaint);
+        }
+        
+        public bool Login(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
+            return base.Channel.Login(user);
+        }
+        
+        public System.Threading.Tasks.Task<bool> LoginAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
+            return base.Channel.LoginAsync(user);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.Wallet ConfigureWallet(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet) {
+            return base.Channel.ConfigureWallet(wallet);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Wallet> ConfigureWalletAsync(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet) {
+            return base.Channel.ConfigureWalletAsync(wallet);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.Wallet CreditWallet(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet) {
+            return base.Channel.CreditWallet(wallet);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Wallet> CreditWalletAsync(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet) {
+            return base.Channel.CreditWalletAsync(wallet);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.Wallet DebitFromWallet(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet) {
+            return base.Channel.DebitFromWallet(wallet);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Wallet> DebitFromWalletAsync(PeopleEmpowermentFrontEndSite.UserService.Wallet wallet) {
+            return base.Channel.DebitFromWalletAsync(wallet);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.Service[] ViewRequestHistory(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
+            return base.Channel.ViewRequestHistory(user);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Service[]> ViewRequestHistoryAsync(PeopleEmpowermentFrontEndSite.UserService.UserDetail user) {
+            return base.Channel.ViewRequestHistoryAsync(user);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServicePayment MakeServicePayment(PeopleEmpowermentFrontEndSite.UserService.ServicePayment payment) {
+            return base.Channel.MakeServicePayment(payment);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServicePayment> MakeServicePaymentAsync(PeopleEmpowermentFrontEndSite.UserService.ServicePayment payment) {
+            return base.Channel.MakeServicePaymentAsync(payment);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServiceRequest RaiseServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.RaiseServiceRequest(request);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> RaiseServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.RaiseServiceRequestAsync(request);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServiceRequest UpdateServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.UpdateServiceRequest(request);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> UpdateServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.UpdateServiceRequestAsync(request);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServiceRequest DeleteServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.DeleteServiceRequest(request);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> DeleteServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.DeleteServiceRequestAsync(request);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServiceResponse AcceptServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.AcceptServiceRequest(request);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceResponse> AcceptServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.AcceptServiceRequestAsync(request);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.UserRole AddUserRole(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.AddUserRole(role);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserRole> AddUserRoleAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.AddUserRoleAsync(role);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.UserRole DeleteUserRole(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.DeleteUserRole(role);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserRole> DeleteUserRoleAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.DeleteUserRoleAsync(role);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.UserRole UpdateUserRole(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.UpdateUserRole(role);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserRole> UpdateUserRoleAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.UpdateUserRoleAsync(role);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.UserDetail[] AvailForService(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.AvailForService(request);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.UserDetail[]> AvailForServiceAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.AvailForServiceAsync(request);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.Service DenyFromService(PeopleEmpowermentFrontEndSite.UserService.Service Service) {
+            return base.Channel.DenyFromService(Service);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.Service> DenyFromServiceAsync(PeopleEmpowermentFrontEndSite.UserService.Service Service) {
+            return base.Channel.DenyFromServiceAsync(Service);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServiceRequest[] GetRequestHistory(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.GetRequestHistory(role);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest[]> GetRequestHistoryAsync(PeopleEmpowermentFrontEndSite.UserService.UserRole role) {
+            return base.Channel.GetRequestHistoryAsync(role);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServiceRequest GetServiceRequestInfo(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.GetServiceRequestInfo(request);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> GetServiceRequestInfoAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.GetServiceRequestInfoAsync(request);
+        }
+        
+        public PeopleEmpowermentFrontEndSite.UserService.ServiceRequest RejectServiceRequest(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.RejectServiceRequest(request);
+        }
+        
+        public System.Threading.Tasks.Task<PeopleEmpowermentFrontEndSite.UserService.ServiceRequest> RejectServiceRequestAsync(PeopleEmpowermentFrontEndSite.UserService.ServiceRequest request) {
+            return base.Channel.RejectServiceRequestAsync(request);
         }
     }
 }

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EntityClasses.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" />
+  <xs:complexType name="Address">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q1:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AreaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateOrRegion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="Complaint">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q2:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AssignedTo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComlaintId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComlaintServiceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Complaint" nillable="true" type="tns:Complaint" />
+  <xs:complexType name="ComplaintSevirity">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q3:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CompalinPriority" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompalinSevirityId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompalintSevirity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedByName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ComplaintSevirity" nillable="true" type="tns:ComplaintSevirity" />
+  <xs:complexType name="Role">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q4:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RoleId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Role" nillable="true" type="tns:Role" />
+  <xs:complexType name="Service">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q5:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AbsoluteServiceCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidFrom" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidTo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Service" nillable="true" type="tns:Service" />
+  <xs:complexType name="ServiceAvailability">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q6:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AreaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceAvailId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceAvailability" nillable="true" type="tns:ServiceAvailability" />
+  <xs:complexType name="UserComplaintDescription">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/EntityClasses.BaseTemplates" base="q7:Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ComlaintId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComplaintDescription" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserComplaintDescription" nillable="true" type="tns:UserComplaintDescription" />
+  <xs:complexType name="ArrayOfService">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Service" nillable="true" type="tns:Service" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfService" nillable="true" type="tns:ArrayOfService" />
+</xs:schema>

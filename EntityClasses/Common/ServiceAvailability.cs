@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityClasses.Common
 {
-    class ServiceAvailability : Base
+    public class ServiceAvailability : Base
     {
         private string _areaCode;
         private string _description;

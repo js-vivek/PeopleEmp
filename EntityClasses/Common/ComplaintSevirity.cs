@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityClasses.Common
 {
-    class ComplaintSevirity : Base
+    public class ComplaintSevirity : Base
     {
         private string _compalinPriority;
         private string _compalinSevirityId;

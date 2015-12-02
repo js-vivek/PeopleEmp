@@ -173,8 +173,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminDashBoardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\ServiceConsumerDashBoardController.cs" />
+    <Compile Include="Controllers\ServiceController.cs" />
+    <Compile Include="Controllers\ServiceProviderDashBoardController.cs" />
+    <Compile Include="Controllers\ServiceRequestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -217,9 +223,39 @@
     <None Include="Service References\UserService\EntityClasses.BaseTemplates.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\UserService\EntityClasses.Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\EntityClasses.CustomException.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\UserService\EntityClasses.User.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.Address.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.Complaint.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.Service.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.ServicePayment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.ServiceRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.ServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.UserRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\UserService\PeopleEmpowermentFrontEndSite.UserService.Wallet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\UserService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -270,6 +306,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ExceptionHandling\" />
+    <Folder Include="Views\AdminDashBoard\" />
+    <Folder Include="Views\Register\" />
+    <Folder Include="Views\ServiceConsumerDashBoard\" />
+    <Folder Include="Views\ServiceProviderDashBoard\" />
+    <Folder Include="Views\ServiceRequest\" />
+    <Folder Include="Views\Service\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace EntityClasses.User
 {
     [DataContract]
-    public class ServiceRequest : Base
+    public class ServiceResponse : Base
     {
         private string _amountToBePaid;
         private string _assignTO;

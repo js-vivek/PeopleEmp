@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import namespace="http://schemas.datacontract.org/2004/07/EntityClasses.User" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/EntityClasses.Common" />
   <xs:element name="TestService">
     <xs:complexType>
       <xs:sequence />
@@ -13,17 +14,311 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="AddUser">
+  <xs:element name="RegisterUser">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="user" nillable="true" type="q1:UserDetail" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="AddUserResponse">
+  <xs:element name="RegisterUserResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="AddUserResult" nillable="true" type="q2:UserDetail" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="RegisterUserResult" nillable="true" type="q2:UserDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="address" nillable="true" type="q3:Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="AddAddressResult" nillable="true" type="q4:Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddComplaintComments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="complaintDescription" nillable="true" type="q5:UserComplaintDescription" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddComplaintCommentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddComplaintCommentsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateComplaint">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="complaint" nillable="true" type="q6:Complaint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateComplaintResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="CreateComplaintResult" nillable="true" type="q7:Complaint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="user" nillable="true" type="q8:UserDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfigureWallet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="wallet" nillable="true" type="q9:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfigureWalletResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="ConfigureWalletResult" nillable="true" type="q10:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditWallet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="wallet" nillable="true" type="q11:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditWalletResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="CreditWalletResult" nillable="true" type="q12:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DebitFromWallet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="wallet" nillable="true" type="q13:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DebitFromWalletResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="DebitFromWalletResult" nillable="true" type="q14:Wallet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewRequestHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="user" nillable="true" type="q15:UserDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewRequestHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="ViewRequestHistoryResult" nillable="true" type="q16:ArrayOfService" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MakeServicePayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="payment" nillable="true" type="q17:ServicePayment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MakeServicePaymentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="MakeServicePaymentResult" nillable="true" type="q18:ServicePayment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RaiseServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="request" nillable="true" type="q19:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RaiseServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="RaiseServiceRequestResult" nillable="true" type="q20:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="request" nillable="true" type="q21:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="UpdateServiceRequestResult" nillable="true" type="q22:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="request" nillable="true" type="q23:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="DeleteServiceRequestResult" nillable="true" type="q24:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="request" nillable="true" type="q25:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcceptServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="AcceptServiceRequestResult" nillable="true" type="q26:ServiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUserRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="role" nillable="true" type="q27:UserRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUserRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="AddUserRoleResult" nillable="true" type="q28:UserRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="role" nillable="true" type="q29:UserRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="DeleteUserRoleResult" nillable="true" type="q30:UserRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="role" nillable="true" type="q31:UserRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="UpdateUserRoleResult" nillable="true" type="q32:UserRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AvailForService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="request" nillable="true" type="q33:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AvailForServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="AvailForServiceResult" nillable="true" type="q34:ArrayOfUserDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DenyFromService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="Service" nillable="true" type="q35:Service" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DenyFromServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/EntityClasses.Common" minOccurs="0" name="DenyFromServiceResult" nillable="true" type="q36:Service" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="role" nillable="true" type="q37:UserRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="GetRequestHistoryResult" nillable="true" type="q38:ArrayOfServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServiceRequestInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="request" nillable="true" type="q39:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServiceRequestInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="GetServiceRequestInfoResult" nillable="true" type="q40:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="request" nillable="true" type="q41:ServiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RejectServiceRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/EntityClasses.User" minOccurs="0" name="RejectServiceRequestResult" nillable="true" type="q42:ServiceRequest" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

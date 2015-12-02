@@ -4,3 +4,9 @@ D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpDataAccessLayer\bin\Deb
 D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpDataAccessLayer\obj\Debug\PeopleEmpDataAccessLayer.csprojResolveAssemblyReference.cache
 D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpDataAccessLayer\obj\Debug\PeopleEmpDataAccessLayer.dll
 D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\PeopleEmpDataAccessLayer\obj\Debug\PeopleEmpDataAccessLayer.pdb
+D:\PeopleEmp_v1\project\PeopleEmpDataAccessLayer\bin\Debug\PeopleEmpDataAccessLayer.dll.config
+D:\PeopleEmp_v1\project\PeopleEmpDataAccessLayer\bin\Debug\PeopleEmpDataAccessLayer.dll
+D:\PeopleEmp_v1\project\PeopleEmpDataAccessLayer\bin\Debug\PeopleEmpDataAccessLayer.pdb
+D:\PeopleEmp_v1\project\PeopleEmpDataAccessLayer\obj\Debug\PeopleEmpDataAccessLayer.csprojResolveAssemblyReference.cache
+D:\PeopleEmp_v1\project\PeopleEmpDataAccessLayer\obj\Debug\PeopleEmpDataAccessLayer.dll
+D:\PeopleEmp_v1\project\PeopleEmpDataAccessLayer\obj\Debug\PeopleEmpDataAccessLayer.pdb

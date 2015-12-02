@@ -42,8 +42,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTemplates\Base.cs" />
+    <Compile Include="Common\ComplaintSevirity.cs" />
+    <Compile Include="Common\UserComplaintDescription.cs" />
+    <Compile Include="Common\Complaint.cs" />
+    <Compile Include="Common\Address.cs" />
+    <Compile Include="Common\ServiceAvailability.cs" />
+    <Compile Include="Common\Role.cs" />
     <Compile Include="Common\Service.cs" />
+    <Compile Include="CustomException\PeopleEmpException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\ServicePayment.cs" />
+    <Compile Include="User\ServiceResponse.cs" />
+    <Compile Include="User\ServiceRequest.cs" />
+    <Compile Include="User\WalletTransaction.cs" />
+    <Compile Include="User\Wallet.cs" />
+    <Compile Include="User\UserRole.cs" />
     <Compile Include="User\UserDetail.cs" />
   </ItemGroup>
   <ItemGroup>

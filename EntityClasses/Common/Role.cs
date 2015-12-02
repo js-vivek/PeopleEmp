@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityClasses.Common
 {
-    class Role:Base
+    public class Role:Base
     {
         private string _roleId;
         private string _roleName;

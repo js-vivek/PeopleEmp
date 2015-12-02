@@ -3,3 +3,8 @@ D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\EntityClasses\bin\Debug\EntityCl
 D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\EntityClasses\obj\Debug\EntityClasses.dll
 D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\EntityClasses\obj\Debug\EntityClasses.pdb
 D:\PeopleEmp\Code\PeopleEmpowermentFrontEndSite\EntityClasses\obj\Debug\EntityClasses.csprojResolveAssemblyReference.cache
+D:\PeopleEmp_v1\project\EntityClasses\bin\Debug\EntityClasses.dll
+D:\PeopleEmp_v1\project\EntityClasses\bin\Debug\EntityClasses.pdb
+D:\PeopleEmp_v1\project\EntityClasses\obj\Debug\EntityClasses.csprojResolveAssemblyReference.cache
+D:\PeopleEmp_v1\project\EntityClasses\obj\Debug\EntityClasses.dll
+D:\PeopleEmp_v1\project\EntityClasses\obj\Debug\EntityClasses.pdb

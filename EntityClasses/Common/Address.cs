@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityClasses.Common
 {
-    class Address:Base
+    public class Address:Base
     {
         private string _addressLine1;
         private string _addressLine2;
