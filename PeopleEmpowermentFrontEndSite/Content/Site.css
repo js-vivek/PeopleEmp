@@ -1,42 +1,26 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    margin: 1% auto;
     height:100%;
-    width:100%;
-    background-color:aqua;
+    width:75%;
+   background: -webkit-linear-gradient(left, #FA5882, white, white,white,white,white,white, #FA5882); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #FA5882, white, white,white,white,white,white, #FA5882); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #FA5882, white, white,white,white,white,white, #FA5882); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, #FA5882, white, white,white,white,white,white, #FA5882); /* Standard syntax (must be last) */
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
     height:70%;
     width:100%;
+    background: -webkit-linear-gradient(top, #81F7D8, #E0F8EC, #E0F8EC, #81F7D8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #81F7D8, #E0F8EC, #E0F8EC, #81F7D8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #81F7D8, #E0F8EC, #E0F8EC, #81F7D8); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to bottom, #81F7D8, #E0F8EC, #E0F8EC, #81F7D8); /* Standard syntax (must be last) */
 }
-.navbar navbar-inverse navbar-fixed-top
-{
-     height:15%;
-    width:100%;
-}
-.container footer-content
-{
-     height:15%;
-    width:100%;
-}
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.header{
+    background-color:white;
+    /*opacity: 0.6;
+    filter: alpha(opacity=60);  For IE8 and earlier */
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-.container{
 
-    background-color:red;
-}

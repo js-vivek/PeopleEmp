@@ -1,0 +1,47 @@
+﻿
+        @*<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>*@
+            <div>
+                <ul id="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">Our Services</a>
+                        <ul>
+                            <li><a href="#">Long Term</a></li>
+                            <li><a href="#">Short Term</a></li>
+                            <li>
+                                <a href="#">Others</a>
+                                @*<ul>
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                </ul>*@
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Articles</a>
+                        <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">User Experience</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                </ul>
+            </div>
+           @* @Html.Partial("_LoginPartial")*@
+        </div>
+

@@ -197,12 +197,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap1.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\PeopleEmp.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -303,9 +305,13 @@
     <None Include="Service References\UserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Shared\Components\_Header.cshtml" />
+    <Content Include="Views\Shared\Components\_Footer.cshtml" />
+    <Content Include="Views\Shared\Components\_LeftPanel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="CSS\" />
     <Folder Include="ExceptionHandling\" />
     <Folder Include="Views\AdminDashBoard\" />
     <Folder Include="Views\Register\" />

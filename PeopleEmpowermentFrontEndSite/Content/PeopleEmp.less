@@ -1,0 +1,51 @@
+﻿@body-bg-color:Aqua;
+@header-bg-color:Green;
+@footer-bg-color:Gray;
+@body-font-color:White;
+@body-h1-color:Red;
+@body-h2-color:Red;
+@body-h3-color:Red;
+@header-height:20%;
+@footer-height:15%;
+@content-height:65%;
+@left-panel-height:20%;
+@left-panel-width:20%;
+body {
+    height:100%;
+    width:100%;
+    background-color:@body-bg-color;
+    color:@body-font-color;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    height:@content-height;
+    width:100%;
+}
+.navbar navbar-inverse navbar-fixed-top
+{
+     height:15%;
+    width:100%;
+}
+.container footer-content
+{
+     height:15%;
+    width:100%;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.container{
+
+    background-color:red;
+}
